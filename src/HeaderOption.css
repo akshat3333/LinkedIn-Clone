@@ -1,0 +1,23 @@
+.headerOption {
+    display: flex;
+    flex-direction: column; /* ek ke neeche ek krdo. To isse icon ke neeche text aa jayega*/
+    align-items: center; /*sare items by default left align hote, ye center me kr dega */
+    margin-right: 20px;
+    color: gray; /* icon and text ko gray krdia*/
+    cursor: pointer; /* hover krne pe hath aa jaye, jaisa link pe krne pe ata*/
+}
+
+.headerOption:hover{
+    color: black; /* hover krne pe black color ho jaye*/
+}
+
+.headerOption__title{
+    font-size: 12px;
+    font-weight: 400; /*this changes the thickness of text ( in this case it reduced it) */
+}
+
+.headerOption__icon {
+    object-fit: contain; /*maintain aspect ratio or stm */
+    height: 25px !important; /*important overwrite material ui's height and width*/
+    width: 25px !important; /*here we are setting height and width of icons */
+}

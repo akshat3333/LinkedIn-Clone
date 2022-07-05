@@ -1,0 +1,43 @@
+.header{
+    position: sticky; /*now it will stick on screen*/
+    top:0; /*I think 0 means it will stick at the top*/
+    display: flex; /*with this everything goes into a line / row */
+    justify-content: space-evenly; /* is se sab evenly space hokr center me aa jayega */
+    border-bottom: 0.1px solid lightgray; /*is se iske niche ek patli si light gray line aa jayegi*/
+    padding: 10px 0;
+    padding-bottom: 10px; /* header ke neece aur line ke upr ki distance*/
+    width: 100%; /*dont know what this does*/
+    z-index: 999; /*see what this does*/
+    background-color: white;
+}
+
+.header__left{
+    display: flex;
+}
+
+.header__left > img{
+    object-fit: contain; /* It keeps the aspect ratio* when you resize the img */
+    height: 40px;
+    margin-right: 10px; /* Margin towards right side of the image*/
+}
+
+.header__search{
+    padding: 10px;
+    display: flex;
+    align-items: center; /* items will come in center now, both vertically and horizontally */
+    border-radius: 5px;
+    height: 22px; /*height from the top*/
+    color: gray; /*color of whole search class*/
+    background-color: #eef3f8;
+}
+
+.header__search > input{
+    outline: none;
+    border: none;
+    background: none; /*this basically clers the input out, i.e. no border, no bg, no nothing*/
+
+}
+
+.header__right {
+    display: flex; /*by default put things in a row*/
+}
